@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		3B3A81B3296C55300016A40B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81B2296C55300016A40B /* AppDelegate.m */; };
-		3B3A81B6296C55300016A40B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81B5296C55300016A40B /* ViewController.m */; };
 		3B3A81B8296C55340016A40B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A81B7296C55340016A40B /* Assets.xcassets */; };
-		3B3A81BB296C55340016A40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A81B9296C55340016A40B /* Main.storyboard */; };
-		3B3A81BD296C55340016A40B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81BC296C55340016A40B /* main.m */; };
+		3B3A81C8296C57B20016A40B /* NSAppSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81C7296C57B20016A40B /* NSAppSubclass.m */; };
+		3B3A81CA296C57D80016A40B /* HUDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81C9296C57D80016A40B /* HUDWindowController.m */; };
+		3B3A81CF296C58250016A40B /* VolumeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81CE296C58250016A40B /* VolumeControl.m */; };
+		3B3A81D1296C585B0016A40B /* BrightnessControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81D0296C585B0016A40B /* BrightnessControl.m */; };
+		3B3A81D6296C58C50016A40B /* HUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81D5296C58C50016A40B /* HUDWindow.m */; };
+		3B3A81D9296C592B0016A40B /* HUDWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A81D8296C592B0016A40B /* HUDWindow.xib */; };
+		3B3A81DB296C59350016A40B /* Volume.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A81DA296C59350016A40B /* Volume.pdf */; };
+		3B3A81DE296C595D0016A40B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3A81DD296C595D0016A40B /* main.m */; };
+		3B3A81E1296C5E5D0016A40B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A81E0296C5E5D0016A40B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B3A81AE296C55300016A40B /* osdui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osdui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3A81B1296C55300016A40B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B3A81B2296C55300016A40B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3B3A81B4296C55300016A40B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3B3A81B5296C55300016A40B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3B3A81B7296C55340016A40B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3B3A81BA296C55340016A40B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3B3A81BC296C55340016A40B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3B3A81BE296C55340016A40B /* osdui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = osdui.entitlements; sourceTree = "<group>"; };
+		3B3A81C4296C56200016A40B /* OSDUIHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSDUIHelper.h; sourceTree = "<group>"; };
+		3B3A81C6296C57810016A40B /* NSAppSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAppSubclass.h; sourceTree = "<group>"; };
+		3B3A81C7296C57B20016A40B /* NSAppSubclass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAppSubclass.m; sourceTree = "<group>"; };
+		3B3A81C9296C57D80016A40B /* HUDWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDWindowController.m; sourceTree = "<group>"; };
+		3B3A81CB296C57E40016A40B /* HUDWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDWindowController.h; sourceTree = "<group>"; };
+		3B3A81CD296C581A0016A40B /* VolumeControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolumeControl.h; sourceTree = "<group>"; };
+		3B3A81CE296C58250016A40B /* VolumeControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeControl.m; sourceTree = "<group>"; };
+		3B3A81D0296C585B0016A40B /* BrightnessControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BrightnessControl.m; sourceTree = "<group>"; };
+		3B3A81D2296C58680016A40B /* BrightnessControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BrightnessControl.h; sourceTree = "<group>"; };
+		3B3A81D4296C58BB0016A40B /* HUDWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDWindow.h; sourceTree = "<group>"; };
+		3B3A81D5296C58C50016A40B /* HUDWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDWindow.m; sourceTree = "<group>"; };
+		3B3A81D8296C592B0016A40B /* HUDWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HUDWindow.xib; sourceTree = "<group>"; };
+		3B3A81DA296C59350016A40B /* Volume.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Volume.pdf; sourceTree = "<group>"; };
+		3B3A81DD296C595D0016A40B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B3A81E0296C5E5D0016A40B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,16 +72,66 @@
 		3B3A81B0296C55300016A40B /* osdui */ = {
 			isa = PBXGroup;
 			children = (
-				3B3A81B1296C55300016A40B /* AppDelegate.h */,
-				3B3A81B2296C55300016A40B /* AppDelegate.m */,
-				3B3A81B4296C55300016A40B /* ViewController.h */,
-				3B3A81B5296C55300016A40B /* ViewController.m */,
-				3B3A81B7296C55340016A40B /* Assets.xcassets */,
-				3B3A81B9296C55340016A40B /* Main.storyboard */,
-				3B3A81BC296C55340016A40B /* main.m */,
-				3B3A81BE296C55340016A40B /* osdui.entitlements */,
+				3B3A81C5296C57340016A40B /* Logic */,
+				3B3A81D7296C59060016A40B /* UI */,
+				3B3A81DC296C59480016A40B /* Supporting Files */,
 			);
 			path = osdui;
+			sourceTree = "<group>";
+		};
+		3B3A81C5296C57340016A40B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A81C4296C56200016A40B /* OSDUIHelper.h */,
+				3B3A81B1296C55300016A40B /* AppDelegate.h */,
+				3B3A81B2296C55300016A40B /* AppDelegate.m */,
+				3B3A81C6296C57810016A40B /* NSAppSubclass.h */,
+				3B3A81C7296C57B20016A40B /* NSAppSubclass.m */,
+				3B3A81CB296C57E40016A40B /* HUDWindowController.h */,
+				3B3A81C9296C57D80016A40B /* HUDWindowController.m */,
+				3B3A81D3296C58A20016A40B /* UI Subclasses */,
+				3B3A81CC296C580F0016A40B /* Helpers */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3B3A81CC296C580F0016A40B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A81CD296C581A0016A40B /* VolumeControl.h */,
+				3B3A81CE296C58250016A40B /* VolumeControl.m */,
+				3B3A81D2296C58680016A40B /* BrightnessControl.h */,
+				3B3A81D0296C585B0016A40B /* BrightnessControl.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3B3A81D3296C58A20016A40B /* UI Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A81D4296C58BB0016A40B /* HUDWindow.h */,
+				3B3A81D5296C58C50016A40B /* HUDWindow.m */,
+			);
+			path = "UI Subclasses";
+			sourceTree = "<group>";
+		};
+		3B3A81D7296C59060016A40B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A81DA296C59350016A40B /* Volume.pdf */,
+				3B3A81D8296C592B0016A40B /* HUDWindow.xib */,
+				3B3A81E0296C5E5D0016A40B /* MainMenu.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3B3A81DC296C59480016A40B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B3A81B7296C55340016A40B /* Assets.xcassets */,
+				3B3A81DD296C595D0016A40B /* main.m */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3A81B8296C55340016A40B /* Assets.xcassets in Resources */,
-				3B3A81BB296C55340016A40B /* Main.storyboard in Resources */,
+				3B3A81D9296C592B0016A40B /* HUDWindow.xib in Resources */,
+				3B3A81DB296C59350016A40B /* Volume.pdf in Resources */,
+				3B3A81E1296C5E5D0016A40B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,24 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B3A81B6296C55300016A40B /* ViewController.m in Sources */,
-				3B3A81BD296C55340016A40B /* main.m in Sources */,
+				3B3A81C8296C57B20016A40B /* NSAppSubclass.m in Sources */,
+				3B3A81CA296C57D80016A40B /* HUDWindowController.m in Sources */,
 				3B3A81B3296C55300016A40B /* AppDelegate.m in Sources */,
+				3B3A81D1296C585B0016A40B /* BrightnessControl.m in Sources */,
+				3B3A81CF296C58250016A40B /* VolumeControl.m in Sources */,
+				3B3A81DE296C595D0016A40B /* main.m in Sources */,
+				3B3A81D6296C58C50016A40B /* HUDWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3B3A81B9296C55340016A40B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B3A81BA296C55340016A40B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3B3A81BF296C55340016A40B /* Debug */ = {
@@ -271,15 +332,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = osdui/osdui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WCQRQ8RKJR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +348,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.m00nbek.osdui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
@@ -297,15 +358,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = osdui/osdui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WCQRQ8RKJR;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +374,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.m00nbek.osdui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;

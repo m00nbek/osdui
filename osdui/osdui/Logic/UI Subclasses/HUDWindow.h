@@ -5,8 +5,8 @@
 //  Created by m00nbek Melikulov on 1/9/23.
 //
 
-#ifndef HUDWindow_h
-#define HUDWindow_h
+#import <Cocoa/Cocoa.h>
 
+@interface HUDWindow : NSPanel
 
-#endif /* HUDWindow_h */
+@end

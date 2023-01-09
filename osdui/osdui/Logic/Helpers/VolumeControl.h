@@ -5,8 +5,15 @@
 //  Created by m00nbek Melikulov on 1/9/23.
 //
 
-#ifndef VolumeControl_h
-#define VolumeControl_h
+#import <Foundation/Foundation.h>
 
+#define kVolumeControlMinValue  0.0f
+#define kVolumeControlMaxValue  1.0f
 
-#endif /* VolumeControl_h */
+@interface VolumeControl : NSObject
+
+@property (readwrite, class, getter=getVolumeLevel) Float32 volumeLevel;
+@property (readwrite, class, getter=isAudioMuted) BOOL muted;
+@property (readwrite, class, getter=volume) float volume;
+
+@end

@@ -5,8 +5,12 @@
 //  Created by m00nbek Melikulov on 1/9/23.
 //
 
-#ifndef NSAppSubclass_h
-#define NSAppSubclass_h
+#import <Cocoa/Cocoa.h>
 
+@class HUDWindowController;
 
-#endif /* NSAppSubclass_h */
+@interface NSAppSubclass : NSApplication
+
+@property (readwrite) HUDWindowController *hudCtrl;
+
+@end

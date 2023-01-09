@@ -16,11 +16,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="NewBezelServices" id="1Xt-HY-uBw">
+                <menuItem title="OSDUI" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="NewBezelServices" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="OSDUI" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="Quit NewBezelServices" id="4sb-4s-VLi">
+                            <menuItem title="Quit OSDUI" id="4sb-4s-VLi">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
