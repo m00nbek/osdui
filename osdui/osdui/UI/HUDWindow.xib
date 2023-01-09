@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="HUDWindowController">
+            <connections>
+                <outlet property="image" destination="NUi-iG-lDv" id="5Cd-M9-sTA"/>
+                <outlet property="slider" destination="Co4-dI-24N" id="ffZ-2e-8L6"/>
+                <outlet property="tabView" destination="K77-Yl-xQv" id="sU1-Is-SWD"/>
+                <outlet property="text" destination="Xxv-n0-FNY" id="udo-la-xiB"/>
+                <outlet property="window" destination="6sC-Mk-lSW" id="wCk-yG-U68"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="HUD" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="utilityWindow" frameAutosaveName="" id="6sC-Mk-lSW" customClass="HUDWindow">
+            <windowStyleMask key="styleMask" utility="YES" nonactivatingPanel="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" canJoinAllSpaces="YES" stationary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="300" height="300"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <value key="maxSize" type="size" width="300" height="300"/>
+            <view key="contentView" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-gB-q4f">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="250"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-iG-lDv">
+                        <rect key="frame" x="0.0" y="50" width="275" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="NSJ-CE-s73"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="Volume" id="i0n-ek-IiP"/>
+                    </imageView>
+                    <tabView drawsBackground="NO" type="noTabsNoBorder" initialItem="0DE-Gm-KwM" translatesAutoresizingMaskIntoConstraints="NO" id="K77-Yl-xQv">
+                        <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="hHE-0e-TMy"/>
+                        </constraints>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="Slider" identifier="1" id="0DE-Gm-KwM">
+                                <view key="view" id="7Jq-fg-tFR">
+                                    <rect key="frame" x="0.0" y="0.0" width="275" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <slider focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Co4-dI-24N">
+                                            <rect key="frame" x="8" y="-6" width="259" height="58"/>
+                                            <sliderCell key="cell" continuous="YES" state="on" focusRingType="none" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="uvR-aN-Qnx"/>
+                                            <connections>
+                                                <action selector="sliderAction:" target="-2" id="X6p-SP-p2F"/>
+                                            </connections>
+                                        </slider>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Co4-dI-24N" secondAttribute="bottom" id="6W8-Ye-6e8"/>
+                                        <constraint firstItem="Co4-dI-24N" firstAttribute="top" secondItem="7Jq-fg-tFR" secondAttribute="top" id="8ah-zl-Up3"/>
+                                        <constraint firstAttribute="trailing" secondItem="Co4-dI-24N" secondAttribute="trailing" constant="10" id="EvU-yK-bmW"/>
+                                        <constraint firstItem="Co4-dI-24N" firstAttribute="leading" secondItem="7Jq-fg-tFR" secondAttribute="leading" constant="10" id="kQH-Hb-HkW"/>
+                                    </constraints>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="Text" identifier="2" id="Y3T-hJ-dDg">
+                                <view key="view" id="NGN-Or-Hks">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xxv-n0-FNY">
+                                            <rect key="frame" x="-2" y="11" width="212" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="IFM-b6-4Zd">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="height" constant="250" id="2bN-uu-tDo"/>
+                    <constraint firstItem="NUi-iG-lDv" firstAttribute="top" secondItem="ehv-gB-q4f" secondAttribute="top" id="FSm-Ei-QyM"/>
+                    <constraint firstItem="K77-Yl-xQv" firstAttribute="top" secondItem="NUi-iG-lDv" secondAttribute="bottom" id="HBs-g7-BnB"/>
+                    <constraint firstAttribute="trailing" secondItem="NUi-iG-lDv" secondAttribute="trailing" id="Lm6-qB-zTj"/>
+                    <constraint firstAttribute="width" constant="275" id="QcR-oz-dgH"/>
+                    <constraint firstAttribute="bottom" secondItem="K77-Yl-xQv" secondAttribute="bottom" id="U4E-kN-DdF"/>
+                    <constraint firstItem="K77-Yl-xQv" firstAttribute="leading" secondItem="ehv-gB-q4f" secondAttribute="leading" id="a12-4R-X7R"/>
+                    <constraint firstItem="NUi-iG-lDv" firstAttribute="leading" secondItem="ehv-gB-q4f" secondAttribute="leading" id="dto-fN-jzj"/>
+                    <constraint firstAttribute="trailing" secondItem="K77-Yl-xQv" secondAttribute="trailing" id="is7-Po-0Rf"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="115" y="-17"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="Volume" width="445" height="495"/>
+    </resources>
+</document>
