@@ -9,4 +9,4 @@ chmod +x install.sh
 ```
 
 ### Preview
-![Preview](assets/demo.mp4 "Preview")
+![demo](https://user-images.githubusercontent.com/65346086/212548175-1b53ab82-26d6-410f-9cd4-076a1a85f341.gif)
